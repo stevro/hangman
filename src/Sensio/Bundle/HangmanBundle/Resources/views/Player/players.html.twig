@@ -1,0 +1,7 @@
+<ul>
+    {% for player in players %}
+    <li>{{ player.username|capitalize }}</li>
+    {% else %}
+    <li>No players yet.</li>
+    {% endfor %}
+</ul>
